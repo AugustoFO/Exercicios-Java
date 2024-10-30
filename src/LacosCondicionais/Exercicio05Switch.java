@@ -1,7 +1,7 @@
 /*Escreva um algoritmo em Java que leia o código de um item (número inteiro de 1 a 6) e a quantidade comprada deste 
  * item (número inteiro). A seguir, mostre na tela o valor total da conta e o nome do produto que foi comprado.*/
 
-package LacoDeRepeticao;
+package LacosCondicionais;
 import java.util.Scanner;
 
 public class Exercicio05Switch {

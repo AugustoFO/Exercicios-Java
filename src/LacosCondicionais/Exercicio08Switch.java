@@ -3,7 +3,7 @@
  * caso haja saldo suficiente. Ao final de cada operação, exiba o novo Saldo na tela. A variável saldo (float), será inicializada com o 
  * valor de R$ 1000.00. Caso a operação seja diferente do intervalo 1 a 3, mostre a mensagem Operação Inválida! */
 
-package LacoDeRepeticao;
+package LacosCondicionais;
 import java.util.Scanner;
 
 public class Exercicio08Switch {

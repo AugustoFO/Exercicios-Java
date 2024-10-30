@@ -3,7 +3,7 @@
 * doação. Escreva um Algoritmo em Java que obtenha via teclado o nome do doador (String), a idade (inteiro) do doador e se é a primeira doação 
 * (boolean). De acordo com as Regras para a doação, mostre na tela se o doador está Apto ou Não Apto para doar sangue.*/
 
-package LacoDeRepeticao;
+package LacosCondicionais;
 import java.util.Scanner;
 
 public class Exercicio03If {
