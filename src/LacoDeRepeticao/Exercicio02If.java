@@ -1,44 +1,56 @@
+/* Enunciado:
+ * Escreva um algoritmo em Java, que leia um número inteiro via teclado e mostre na tela uma mensagem indicando se este número é par ou ímpar e
+ * se o número é positivo ou negativo.*/
+
 package LacoDeRepeticao;
 import java.util.Scanner;
 
-//Enunciado:
-//Escreva um algoritmo em Java, que leia um número inteiro via teclado e mostre na tela uma mensagem indicando se este número é par ou ímpar e
-//se o número é positivo ou negativo.
-
 public class Exercicio02If {
     public static void main(String[] args) {
-        Scanner leia = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
          System.out.println("Digite um número inteiro para verificação: ");
-         int numero = leia.nextInt();
+         int numero = input.nextInt();
          
-         leia.close();
+         input.close();
          
-         int resto = numero % 2;
+         String paridade, sinal;
+         
          
          if (numero == 0) {
         	 
              System.out.println("O número é zero, não é nem par nem ímpar.");
+             return;
          }
-         else if (resto == 0) {
+         
+         else if (numero % 2 == 0) {
+        	 
+        	 paridade = "par";
+        	 
         	 if(numero > 0) {
         		 
-        		 System.out.println("O Número " + numero + " é par e positivo!");
+        		 sinal = "positivo";
         	 }
         	 else {
         		 
-        		System.out.println("O Número " + numero + " é par e negativo!");
+        		 sinal = "negativo";
         	 }
          }
+         
          else {
+        	 
+        	 paridade = "ímparr";
+        	 
         	 if(numero > 0) {
         		 
-        		 System.out.println("O Número " + numero + " é ímpar e positivo!");
+          		sinal = "positivo";
         	 }
         	 else {
-        		 
-        		System.out.println("O Número " + numero + " é ímpar e negativo!");
+        		
+          		sinal = "negativo";
         	 }
          }
+         
+         System.out.println("O Número " + numero + " é " + paridade + " e " + sinal + "!");
     }
 }
